@@ -11,8 +11,8 @@ class Clawparty < Formula
     system "./build/deps.sh"
     system "./build/pipy.sh"
 
-    bin.install "bin/ztm" => "clawparty"
-    bin.install_symlink "clawparty" => "ztm"
+    bin.install "bin/ztm"
+    bin.install_symlink "ztm" => "clawparty"
   end
 
   test do
