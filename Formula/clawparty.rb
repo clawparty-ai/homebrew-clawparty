@@ -2,7 +2,7 @@ class Clawparty < Formula
   desc "Privacy-first, chat-native multi-agent platform"
   homepage "https://github.com/clawparty-ai/clawparty"
   url "https://github.com/clawparty-ai/clawparty.git", branch: "main"
-  version "0.0.0"
+  version "0.0.1"
 
   depends_on "cmake" => :build
   depends_on "node" => :build
