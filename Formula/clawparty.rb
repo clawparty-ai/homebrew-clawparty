@@ -5,11 +5,10 @@ class Clawparty < Formula
   version "0.0.0"
 
   depends_on "cmake" => :build
+  depends_on "node" => :build
 
   def install
-    system "git", "submodule", "update", "--init", "--recursive"
-    system "./build/deps.sh"
-    system "./build/pipy.sh"
+    system "./build.sh"
 
     bin.install "bin/ztm"
     bin.install_symlink "ztm" => "clawparty"
